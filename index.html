@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PookiePad</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>PookiePad</h1>
+    <img src="./assets/kitty.png" height="50px" alt="Cute kitty holding a pencil" class="pookie-mascot">
+    <h2>word counter : <span id="word-counter">0</span></h2>
+    
+    <div class="text-plate">
+      <input type="text" id="title-name" placeholder="Title">
+      <textarea id="note" required placeholder="Start typing..." hidden></textarea>
+      <div id="display"></div>
+    </div>
+
+    <div class="button">
+      <button type="button" id="clear-btn">Clear 🗑️</button>
+      <button type="submit" id="submit-btn">Save 💾</button>
+      <button type="button" id="edit">Edit✏️</button>
+    </div>
+   
+    <div class="sidebar">
+      <h3>🌸 My Note Garden</h3>
+      <div id="note-list">
+        <!-- Notes will be loaded here -->
+      </div>
+    </div>
+    
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
+ 
