@@ -63,6 +63,13 @@ submitBtn.addEventListener("click", () => {
     content: contentArea.value,
   };
 
+  const isDuplicate = notes.some((existingNote) => existingNote.title === note.title);
+
+  if (isDuplicate) {
+    alert("A note with this title already exists. Please use a different title.");
+    return; 
+  }
+
   notes.push(note);
   localStorage.setItem("N-key", JSON.stringify(notes));
   renderSidebarNotes();
